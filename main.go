@@ -7,6 +7,17 @@ import (
 	"os"
 )
 
+func SomeTestMethod() string {
+	x := 1
+	if x == 1 {
+		return "1"
+	} else {
+		return "2"
+	}
+	
+	return "3"
+}
+
 // create a function named getUserName that returns a single string
 func getUserName() string {
 	// On Linux and Mac the username is available as simply USER
@@ -21,5 +32,5 @@ func getUserName() string {
 
 // entrypoint function for our app
 func main() {
-	fmt.Printf("Hello, %s\n", getUserName())
+	fmt.Printf("Hello, %s\n", getUserName(), SomeTestMethod())
 }
